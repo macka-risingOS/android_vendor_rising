@@ -49,7 +49,8 @@ SOONG_CONFIG_risingGlobalVars += \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
     uses_egl_display_array \
-    inline_kernel_building
+    inline_kernel_building \
+    include_miui_camera
 
 SOONG_CONFIG_NAMESPACES += risingNvidiaVars
 SOONG_CONFIG_risingNvidiaVars += \
@@ -99,6 +100,7 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
 SOONG_CONFIG_risingGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
 SOONG_CONFIG_risingGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_risingGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
+SOONG_CONFIG_risingGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_risingGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_risingGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
 SOONG_CONFIG_risingGlobalVars_target_health_charging_control_charging_enabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED)
