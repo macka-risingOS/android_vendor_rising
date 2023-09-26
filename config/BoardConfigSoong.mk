@@ -51,7 +51,8 @@ SOONG_CONFIG_risingGlobalVars += \
     target_trust_usb_control_disable \
     uses_egl_display_array \
     inline_kernel_building \
-    include_miui_camera
+    include_miui_camera \
+    uses_miui_camera
 
 SOONG_CONFIG_NAMESPACES += risingNvidiaVars
 SOONG_CONFIG_risingNvidiaVars += \
@@ -69,6 +70,7 @@ SOONG_CONFIG_risingQcomVars += \
 endif
 
 # Soong bool variables
+<<<<<<< HEAD
 SOONG_CONFIG_risingGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
 SOONG_CONFIG_risingGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_risingGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
@@ -117,6 +119,7 @@ SOONG_CONFIG_risingGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFAC
 SOONG_CONFIG_risingGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_USB_CONTROL_PATH)
 SOONG_CONFIG_risingGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
 SOONG_CONFIG_risingGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
+SOONG_CONFIG_risingGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_risingQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
